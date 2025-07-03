@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formação - Thalita Valence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Formação e Idiomas</h1>
+
+    <section class="bloco">
+      <h2>Formação Educacional</h2>
+      <ul>
+        <li>Graduação em Análise e Desenvolvimento de Sistemas – Em andamento</li>
+        <li>Curso de Lógica de Programação com Python – Concluído</li>
+        <li>Curso de HTML e CSS – Em andamento</li>
+      </ul>
+    </section>
+
+    <section class="bloco">
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Português – Nativo</li>
+        <li>Inglês – Básico (em estudo)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> - Thalita Valence</p>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const ano = new Date().getFullYear();
+    document.getElementById("ano").textContent = ano;
+  });
+</script>
+</body>
+</html>
+
