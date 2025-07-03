@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Mim - Thalita Valence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Sobre Mim</h1>
+    
+    <section class="bloco sobre-texto">
+      <img src="imagens/thalita2.jpg" alt="Minha foto" width="200">
+
+      <h2>Quem Sou Eu</h2>
+
+      <p>Olá! Meu nome é Thalita Valence, sou estudante de Análise e Desenvolvimento de Sistemas e formada em Gestão de Recursos Humanos. Sempre fui apaixonada por aprender coisas novas e encontrei na tecnologia um mundo cheio de possibilidades e desafios.</p>
+
+      <p>Atualmente estou no início da minha trajetória na área de desenvolvimento, com interesse especial por front-end e pela criação de interfaces bonitas e funcionais. Já desenvolvi projetos práticos com HTML, CSS e JavaScript, e estou em constante evolução.</p>
+
+      <p>Além da tecnologia, sou uma pessoa que ama cuidar. Tenho um carinho enorme por animais e crianças. Como cristã acredito que o afeto e o respeito são a base para um mundo melhor.</p>
+
+      <p>Sou curiosa, dedicada e determinada. Gosto de assistir séries, ouvir música, brincar com meus cachorros e aprender sempre. Também estou estudando inglês para ampliar minhas oportunidades profissionais.</p>
+
+      <p>Meu objetivo é crescer na área de tecnologia, contribuir com soluções criativas e acessíveis, e inspirar outras pessoas a se descobrirem na programação.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> - Thalita Valence</p>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const ano = new Date().getFullYear();
+    document.getElementById("ano").textContent = ano;
+  });
+</script>
+</body>
+</html>
+
