@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Contato - Thalita Valence</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Conectando ao CSS externo -->
 </head>
 <body>
   <header>
     <nav>
+      <!-- Menu principal de navegação do site -->
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre Mim</a></li>
@@ -21,7 +22,8 @@
   <main>
     <h1>Fale Comigo</h1>
     <section class="bloco">
-     <form onsubmit="return validarFormulario()">
+      <!-- Formulário de contato com validação simples no envio -->
+      <form onsubmit="return validarFormulario()">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome">
 
@@ -37,29 +39,34 @@
   </main>
 
   <footer>
+    <!-- Rodapé com o ano atual exibido dinamicamente -->
     <p>&copy; <span id="ano"></span> - Thalita Valence</p>
   </footer>
+
   <script>
-  function validarFormulario() {
-    const nome = document.getElementById('nome').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const mensagem = document.getElementById('mensagem').value.trim();
+    // Função que valida o preenchimento do formulário antes do envio
+    function validarFormulario() {
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
 
-    if (!nome || !email || !mensagem) {
-      alert('Por favor, preencha todos os campos antes de enviar.');
-      return false;
+      if (!nome || !email || !mensagem) {
+        alert('Por favor, preencha todos os campos antes de enviar.');
+        return false;
+      }
+
+      alert('Mensagem enviada com sucesso!');
+      return true;
     }
+  </script>
 
-    alert('Mensagem enviada com sucesso!');
-    return true;
-  }
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const ano = new Date().getFullYear();
-    document.getElementById("ano").textContent = ano;
-  });
-</script>
+  <script>
+    // Script para atualizar o ano no rodapé automaticamente
+    document.addEventListener("DOMContentLoaded", function() {
+      const ano = new Date().getFullYear();
+      document.getElementById("ano").textContent = ano;
+    });
+  </script>
 </body>
 </html>
 
