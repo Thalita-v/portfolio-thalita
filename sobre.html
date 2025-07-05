@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Sobre Mim - Thalita Valence</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Importação do CSS externo -->
 </head>
 <body>
   <header>
     <nav>
+      <!-- Navegação principal entre as páginas do site -->
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre Mim</a></li>
@@ -21,11 +22,13 @@
   <main>
     <h1>Sobre Mim</h1>
     
+    <!-- Seção com texto pessoal e imagem de apresentação -->
     <section class="bloco sobre-texto">
       <img src="imagens/thalita2.jpg" alt="Minha foto" width="200">
 
       <h2>Quem Sou Eu</h2>
 
+      <!-- Parágrafos com informações pessoais e profissionais -->
       <p>Olá! Meu nome é Thalita Valence, sou estudante de Análise e Desenvolvimento de Sistemas e formada em Gestão de Recursos Humanos. Sempre fui apaixonada por aprender coisas novas e encontrei na tecnologia um mundo cheio de possibilidades e desafios.</p>
 
       <p>Atualmente estou no início da minha trajetória na área de desenvolvimento, com interesse especial por front-end e pela criação de interfaces bonitas e funcionais. Já desenvolvi projetos práticos com HTML, CSS e JavaScript, e estou em constante evolução.</p>
@@ -39,14 +42,16 @@
   </main>
 
   <footer>
+    <!-- Rodapé com o ano dinâmico -->
     <p>&copy; <span id="ano"></span> - Thalita Valence</p>
   </footer>
+
   <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const ano = new Date().getFullYear();
-    document.getElementById("ano").textContent = ano;
-  });
-</script>
+    // Script para atualizar o ano automaticamente no rodapé
+    document.addEventListener("DOMContentLoaded", function() {
+      const ano = new Date().getFullYear();
+      document.getElementById("ano").textContent = ano;
+    });
+  </script>
 </body>
 </html>
-
