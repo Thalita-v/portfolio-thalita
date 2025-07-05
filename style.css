@@ -1,26 +1,26 @@
-/* Reset básico */
+/* Reset básico para remover margens e paddings padrão dos navegadores */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo do site */
+/* Estilo geral do corpo do site */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+  background: linear-gradient(to bottom right, #e6f0ff, #ffffff); /* Fundo com leve gradiente azul */
   color: #333;
   line-height: 1.6;
 }
 
-
-/* Cabeçalho com menu */
+/* Cabeçalho com fundo azul e sombra sutil */
 header {
   background-color: #004aad;
   padding: 15px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Menu de navegação centralizado e adaptável */
 nav ul {
   list-style: none;
   display: flex;
@@ -32,6 +32,7 @@ nav ul li {
   margin: 0 15px;
 }
 
+/* Links do menu com cor branca e destaque ao passar o mouse */
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -41,10 +42,10 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
-  color: #ffdd00;
+  color: #ffdd00; /* Destaque amarelo no hover */
 }
 
-/* Conteúdo principal */
+/* Área principal com largura fixa, centralizada e fundo branco */
 main {
   padding: 40px 20px;
   max-width: 900px;
@@ -54,13 +55,13 @@ main {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-/* Títulos */
+/* Estilo dos títulos */
 h1, h2 {
   color: #004aad;
   margin-bottom: 20px;
 }
 
-/* Rodapé */
+/* Rodapé com texto centralizado e cor neutra */
 footer {
   text-align: center;
   background: #eee;
@@ -69,7 +70,7 @@ footer {
   margin-top: 40px;
 }
 
-/* Formulário */
+/* Estilização básica do formulário de contato */
 form {
   display: flex;
   flex-direction: column;
@@ -85,9 +86,10 @@ form input, form textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-top: 5px;
-  resize: vertical;
+  resize: vertical; /* Permite redimensionar o campo de mensagem */
 }
 
+/* Botão de envio com destaque */
 form input[type="submit"] {
   margin-top: 15px;
   background-color: #004aad;
@@ -99,10 +101,10 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: #003380;
+  background-color: #003380; /* Escurece ao passar o mouse */
 }
 
-/* Imagens */
+/* Imagens centralizadas com sombra leve e cantos arredondados */
 img {
   display: block;
   max-width: 200px;
@@ -111,7 +113,7 @@ img {
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-/* Seções de conteúdo (como formação e idiomas) */
+/* Estilo das seções de conteúdo, como formação e idiomas */
 section.bloco {
   margin-bottom: 30px;
   padding: 20px;
@@ -137,7 +139,7 @@ section.bloco ul li {
   margin-bottom: 8px;
 }
 
-/* Justificar apenas o texto da página Sobre Mim */
+/* Justifica apenas os parágrafos da página Sobre Mim */
 .sobre-texto p {
   text-align: justify;
 }
