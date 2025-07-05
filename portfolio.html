@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio - Thalita Valence</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Importando o CSS para aplicar estilos -->
 </head>
 <body>
   <header>
     <nav>
+      <!-- Menu de navegação para as seções do site -->
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre Mim</a></li>
@@ -21,21 +22,28 @@
   <main>
     <h1>Portfólio</h1>
     <section class="bloco">
+      <!-- Link para o projeto hospedado no GitHub Pages -->
       <ul>
-        <li><a href="https://github.com/Thalita-v/portfolio-thalita/" target="_blank">
-    thalita-valence.github.io/portfolio-thalita</a></li>
+        <li>
+          <a href="https://github.com/Thalita-v/portfolio-thalita/" target="_blank">
+            thalita-valence.github.io/portfolio-thalita
+          </a>
+        </li>
       </ul>
     </section>
   </main>
 
   <footer>
+    <!-- Rodapé com ano atualizado dinamicamente -->
     <p>&copy; <span id="ano"></span> - Thalita Valence</p>
   </footer>
+
   <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const ano = new Date().getFullYear();
-    document.getElementById("ano").textContent = ano;
-  });
-</script>
+    // Script para mostrar o ano atual no rodapé
+    document.addEventListener("DOMContentLoaded", function() {
+      const ano = new Date().getFullYear();
+      document.getElementById("ano").textContent = ano;
+    });
+  </script>
 </body>
 </html>
