@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Início - Thalita Valence</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Linkando o arquivo CSS externo -->
 </head>
 <body>
   <header>
     <nav>
+      <!-- Menu de navegação entre as páginas do site -->
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre Mim</a></li>
@@ -21,20 +22,24 @@
   <main>
     <h1>Bem-vindo ao meu portfólio!</h1>
     <section class="bloco">
+      <!-- Imagem de apresentação com um parágrafo introdutório -->
       <img src="imagens/thalita.jpeg" alt="Foto de Thalita Valence" width="200">
       <p>Sou Thalita Valence, estudante de Análise e Desenvolvimento de Sistemas. Aqui você encontra um pouco da minha trajetória, meus projetos e formas de contato.</p>
     </section>
   </main>
 
   <footer>
+    <!-- Rodapé com o ano atualizado automaticamente via JavaScript -->
     <p>&copy; <span id="ano"></span> - Thalita Valence</p>
   </footer>
+
   <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const ano = new Date().getFullYear();
-    document.getElementById("ano").textContent = ano;
-  });
-</script>
+    // Script para inserir o ano atual automaticamente no rodapé
+    document.addEventListener("DOMContentLoaded", function() {
+      const ano = new Date().getFullYear();
+      document.getElementById("ano").textContent = ano;
+    });
+  </script>
 </body>
 </html>
 
