@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Formação - Thalita Valence</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Aplicando o estilo da página -->
 </head>
 <body>
   <header>
     <nav>
+      <!-- Menu de navegação para as demais páginas do portfólio -->
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre Mim</a></li>
@@ -21,6 +22,7 @@
   <main>
     <h1>Formação e Idiomas</h1>
 
+    <!-- Seção com informações sobre cursos realizados -->
     <section class="bloco">
       <h2>Formação Educacional</h2>
       <ul>
@@ -30,6 +32,7 @@
       </ul>
     </section>
 
+    <!-- Seção com nível de conhecimento em idiomas -->
     <section class="bloco">
       <h2>Idiomas</h2>
       <ul>
@@ -40,14 +43,17 @@
   </main>
 
   <footer>
+    <!-- Rodapé com o ano atualizado via JavaScript -->
     <p>&copy; <span id="ano"></span> - Thalita Valence</p>
   </footer>
+
   <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const ano = new Date().getFullYear();
-    document.getElementById("ano").textContent = ano;
-  });
-</script>
+    // Script para inserir o ano atual no rodapé
+    document.addEventListener("DOMContentLoaded", function() {
+      const ano = new Date().getFullYear();
+      document.getElementById("ano").textContent = ano;
+    });
+  </script>
 </body>
 </html>
 
